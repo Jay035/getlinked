@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="mb-12 text-white flex justify-between items-center border-b border-[#E5E7EB] tracking-tight w-full gap-x-12 py-6 px-[9.5vw]">
+    <nav className="mb-12 text-white font-inter flex justify-between items-center border-b border-white/[18%] tracking-tight w-full gap-x-12 py-6 px-[9.5vw]">
       {/* <section className="text-white"> */}
       <Link to="/" className="font-bold">
         get<span className="text-[#D434FE]">linked</span>
@@ -15,11 +15,14 @@ export default function Navbar() {
           menuOpen
             ? `left-0 px-8 pt-8 gap-6 opacity-100 z-40 ease-out lg:pt-0 transition-all duration-100 delay-75`
             : `-left-full opacity-0 lg:opacity-100 lg:left-0 transition-all duration-100 delay-75`
-        } absolute top-0 bg-[#11141d] lg:bg-transparent lg:relative h-screen lg:h-fit w-full lg:w-fit ease-in-out flex flex-col justify-center lg:flex-row lg:gap-12 lg:justify-between lg:items-center text-base md:text-lg`}
+        } font-Inter font-medium absolute top-0 bg-[#11141d] lg:bg-transparent lg:relative h-screen lg:h-fit w-full lg:w-fit ease-in-out flex flex-col justify-center lg:flex-row lg:gap-12 lg:justify-between lg:items-center text-base md:text-lg`}
       >
         <li>Timeline</li>
+        <li>Overview</li>
+        <li>FAQs</li>
+        <li>Contact</li>
         <button
-          className="mt-[1.8rem] bg-gradient-to-r from-[#903AFF] via-[#D434FE] to-[#FF26B9] w-[10.8rem] h-[3.3rem] lg:hidden"
+          className="mt-[1.8rem] font-Montserrat font-normal bg-gradient-to-r from-[#903AFF] via-[#D434FE] to-[#FF26B9] w-[10.8rem] h-[3.3rem] lg:hidden"
           //   onClick={(e) => {
           //     e.preventDefault();
           //     setMenuOpen((prevState) => !prevState);
