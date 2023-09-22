@@ -3,3 +3,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: local("ClashDisplay"),
+    url("../public/fonts/Clash\ Display/ClashDisplay-Bold.otf")
+      format("opentype");
+  font-weight: bold;
+}
+
+.font-clashDisplay {
+  font-family: "ClashDisplay";
+}

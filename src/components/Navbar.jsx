@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className="mb-12 text-white font-inter flex justify-between items-center border-b border-white/[18%] tracking-tight w-full gap-x-12 py-6 px-[9.5vw]">
       {/* <section className="text-white"> */}
-      <Link to="/" className="font-bold">
+      <Link to="/" className="font-bold font-clashDisplay">
         get<span className="text-[#D434FE]">linked</span>
       </Link>
       {/* </section> */}
