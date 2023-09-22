@@ -6,7 +6,7 @@ import fireIcon from "../assets/fire.svg";
 export default function Home() {
   return (
     <main className="text-white px-6">
-      <div className="relative">
+      <div className="relative w-fit ml-auto">
         <p className="italic font-Montserrat font-bold mb-[3.62rem]">
           Igniting a Revolution in HR Innovation
         </p>
@@ -20,7 +20,7 @@ export default function Home() {
             <img className="inline w-[2.05rem]" src={fireIcon} alt="fire icon" />
           </span>
         </h1>
-        <p className="mt-[0.56rem]">
+        <p className="mt-[0.56rem] font-Montserrat">
           Participate in getlinked tech Hackathon 2023 stand a chance to win a
           Big prize
         </p>
