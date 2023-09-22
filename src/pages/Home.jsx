@@ -8,7 +8,7 @@ import { RulesAndGuidelines } from "../components/Home/Rules&Guidelines";
 export default function Home() {
   return (
     <main className="text-white ">
-      <div className="relative w-fit ml-auto mx-6">
+      <div className="relative w-fit md:ml-auto md:mx-[3.4rem] mx-auto">
         <p className="italic font-Montserrat font-bold mb-[3.62rem]">
           Igniting a Revolution in HR Innovation
         </p>

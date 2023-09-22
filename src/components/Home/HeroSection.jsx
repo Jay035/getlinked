@@ -7,9 +7,9 @@ import torch from "../../assets/Creative 1.svg";
 
 export function HeroSection() {
   return (
-    <section className="px-6">
+    <section className="px-6 md:px-12 grid md:grid-cols-2">
       {/* hero-content */}
-      <div className="relative pt-[1.12rem] text-center flex flex-col items-center">
+      <div className="relative pt-[1.12rem] text-center flex flex-col items-center md:items-start md:text-left">
         {/* star */}
         <img className="absolute top-0 left-[7.87rem]" src={star} alt="star" />
         <img
@@ -29,10 +29,10 @@ export function HeroSection() {
           alt="torch"
         />
 
-        <h1 className="text-3xl font-bold font-clashDisplay">
+        <h1 className="text-[2rem] md:text-4xl lg:text-[5rem] font-bold font-clashDisplay">
           <span className="block">getlinked Tech</span>
           <span>
-            Hackathon <span>1.0</span>{" "}
+            Hackathon <span className="text-[#D434FE]">1.0</span>{" "}
             <img className="inline w-[2.05rem]" src={chain} alt="chain" />
             <img
               className="inline w-[2.05rem]"
@@ -41,19 +41,19 @@ export function HeroSection() {
             />
           </span>
         </h1>
-        <p className="mt-[0.56rem] font-Montserrat">
+        <p className="mt-[0.56rem] font-Montserrat md:text-lg lg:text-xl">
           Participate in getlinked tech Hackathon 2023 stand a chance to win a
           Big prize
         </p>
         <button
-          className="mt-6 lg:mt-0 text-center font-Montserrat font-normal bg-gradient-to-r from-[#903AFF] via-[#D434FE] to-[#FF26B9] w-[10.8rem] h-[3.3rem] flex justify-center items-center"
+          className="mt-6 md:mt-[2.56rem] text-center font-Montserrat font-normal bg-gradient-to-r from-[#903AFF] via-[#D434FE] to-[#FF26B9] w-[10.8rem] h-[3.3rem] flex justify-center items-center"
           //   onClick={() => {
           //   }}
         >
           Register
         </button>
         {/* countdown timer */}
-        <div className="flex items-center gap-4 mt-[0.89rem] font-UnicaOne">
+        <div className="flex items-center gap-4 mt-[0.89rem] md:mt-[4.81rem] font-UnicaOne">
           <p className="text-5xl">
             00<span className="text-sm">H</span>{" "}
           </p>

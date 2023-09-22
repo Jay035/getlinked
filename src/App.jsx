@@ -5,7 +5,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className="bg-[#150E28] bg-no-repeat bg-hero bg-blend-hard-light">
+    <div className="bg-[#150E28] bg-no-repeat bg-hero bg-blend-hard-light bg-[-105px_3.278px]">
       <Navbar />
 
       <Routes>

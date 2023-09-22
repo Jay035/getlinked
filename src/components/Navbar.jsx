@@ -15,7 +15,7 @@ export default function Navbar() {
           menuOpen
             ? `left-0 px-8 pt-8 gap-6 opacity-100 z-40 ease-out lg:pt-0 transition-all duration-100 delay-75`
             : `-left-full opacity-0 lg:opacity-100 lg:left-0 transition-all duration-100 delay-75`
-        } font-Inter font-medium absolute top-0 bg-[#11141d] lg:bg-transparent lg:relative h-screen lg:h-fit w-full lg:w-fit ease-in-out flex flex-col items-center justify-center lg:flex-row lg:gap-12 lg:justify-between lg:items-center text-base md:text-lg`}
+        } font-Inter font-medium absolute top-0 bg-[#150E28] backdrop-blur-[30px] lg:bg-transparent lg:relative h-screen lg:h-fit w-full lg:w-fit ease-in-out flex flex-col items-start justify-center lg:flex-row lg:gap-12 lg:justify-between lg:items-center text-base md:text-lg`}
       >
         <li>Timeline</li>
         <li>Overview</li>
@@ -69,19 +69,17 @@ export default function Navbar() {
       <div
         onClick={() => setMenuOpen((prevState) => !prevState)}
         className={`z-[999999999999] grid justify-self-end justify-between flex-col lg:hidden gap-1 cursor-pointer ${
-          menuOpen
-            ? "bg-[#150E28] px-1.5 pt-5 py-4 rounded-full"
-            : "bg-transparent"
+          menuOpen && "px-1.5 pt-5 py-4 rounded-full"
         }`}
       >
         <span
           className={`w-4 sm:w-9 h-[3px] bg-white rounded transition-all ease-out duration-150 delay-75 ${
-            menuOpen ? `rotate-[45deg] w-6` : ``
+            menuOpen ? `rotate-[45deg] w-6 translate-y-0.5` : ``
           }`}
         ></span>
         <span
           className={`w-8 sm:w-9 h-[3px] bg-white rounded transition-all duration-150 ease-out delay-75 ${
-            menuOpen ? `rotate-[495deg] -translate-y-1.5 w-6 ` : ``
+            menuOpen ? `rotate-[495deg] -translate-y-1 w-[1.4rem] ` : ``
           }`}
         ></span>
         <span
