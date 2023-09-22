@@ -7,7 +7,7 @@ import torch from "../../assets/Creative 1.svg";
 
 export function HeroSection() {
   return (
-    <section className="px-6 md:px-12 grid md:grid-cols-2">
+    <section className="px-6 md:pl-12 md:pr-0 grid md:grid-cols-2">
       {/* hero-content */}
       <div className="relative pt-[1.12rem] text-center flex flex-col items-center md:items-start md:text-left">
         {/* star */}
@@ -67,7 +67,7 @@ export function HeroSection() {
       </div>
       {/* hero image */}
       <div className="mt-[0.74rem] lg:mt-0">
-        <img src={heroImg} alt="hackathon guy" />
+        <img className="" src={heroImg} alt="hackathon guy" />
       </div>
     </section>
   );
