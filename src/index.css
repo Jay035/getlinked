@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:ital,wght@0,400;0,700;1,700&family=Unica+One&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: local("ClashDisplay"),
+    url("/fonts/Clash\ Display/ClashDisplay-Bold.otf")
+      format("opentype");
+  font-weight: bold;
+}
+
+.font-clashDisplay {
+  font-family: "ClashDisplay";
+}
