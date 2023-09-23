@@ -2,12 +2,17 @@ import img from "../../assets/judging-criteria-illustration.png";
 import star from "../../assets/star.svg";
 import starPu from "../../assets/star pu.svg";
 import starSm from "../../assets/star-sm.svg";
+import ellipse from "../../assets/Ellipse 2.svg";
 
 export function JudgingCriteria() {
   return (
-    <section className="px-[2.81rem] pb-[3.67rem] bg-no-repeat bg-[-176px_3.28px] bg-hero bg-blend-hard-light border-y border-white/[18%]">
-      <div className="relative pt-[4.63rem]">
-        <img className="px-[0.19rem]" src={img} alt="illustration" />
+    <section className="px-[2.81rem] lg:pl-[4.13rem] lg:pr-44 grid gap-[3.31rem] md:pt-20 md:grid-cols-2 pb-[3.67rem] bg-no-repeat bg-[-176px_3.28px] bg-hero bg-blend-hard-light border-y border-white/[18%]">
+      <div className="relative pt-[4.63rem] md:pt-0">
+        <img
+          className="px-[0.19rem] z-50 md:absolute"
+          src={img}
+          alt="illustration"
+        />
         <img
           className="absolute top-[0.94rem] left-[10.81rem] w-[0.81rem]"
           src={starPu}
@@ -18,8 +23,13 @@ export function JudgingCriteria() {
           src={starSm}
           alt="star"
         />
+        <img
+          className="absolute left-4 -top-10 w-[8.3rem] "
+          src={ellipse}
+          alt="ellipse"
+        />
       </div>
-      <div className="text-center relative font-Montserrat">
+      <div className="text-center md:text-left relative font-Montserrat">
         <h2 className="font-clashDisplay text-xl mb-4">
           Judging Criteria
           <span className="text-[#D434FE] block">Key attributes</span>
@@ -67,11 +77,11 @@ export function JudgingCriteria() {
             or APIs, and any other competition-specific requirements.
           </li>
         </ul>
-        <button className="rounded-[0.25rem] mt-7 text-sm py-2 px-[0.88rem] bg-gradient-to-tl from-[#903AFF] via-[#D434FE]/[56.42%] to-[#FE34B9]">
+        <button className="rounded-[0.25rem] mt-7 text-sm py-2 px-[0.88rem] md:px-6 md:py-3 bg-gradient-to-tl from-[#903AFF] via-[#D434FE]/[56.42%] to-[#FE34B9]">
           Read More
         </button>
         <img
-          className="absolute right-[0.19rem] bottom-3 w-[0.65rem]"
+          className="absolute right-[0.19rem] md:right-0 md:-left-[3.31rem] bottom-3 w-[0.65rem]"
           src={star}
           alt="star"
         />
