@@ -4,8 +4,16 @@ import starSm from "../../assets/star-sm.svg";
 
 export function RulesAndGuidelines() {
   return (
-    <section className="px-[2.81rem] lg:pl-44 lg:pr-[6.37rem] grid md:grid-cols-2 md:gap-12 pb-16 bg-no-repeat bg-[-176px_3.28px] bg-hero bg-blend-hard-light border-t border-white/[18%]">
-      <div className="relative md:order-2">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="3000"
+      className="px-[2.81rem] lg:pl-44 lg:pr-[6.37rem] grid md:grid-cols-2 md:gap-12 pb-16 bg-no-repeat bg-[-176px_3.28px] bg-hero bg-blend-hard-light border-t border-white/[18%]"
+    >
+      <div
+        data-aos="fade-left"
+        data-aos-duration="3000"
+        className="relative md:order-2"
+      >
         <img className="px-[0.19rem] lg:w-full" src={img} alt="illustration" />
         <img
           className="absolute top-[11.56rem] md:top-80 left-[0.31rem] w-[0.65rem] md:w-[1.625rem]"
@@ -13,7 +21,11 @@ export function RulesAndGuidelines() {
           alt="star"
         />
       </div>
-      <div className="text-center md:text-left relative md:pt-[8.6rem]">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="3000"
+        className="text-center md:text-left relative md:pt-[8.6rem]"
+      >
         <h2 className="font-clashDisplay text-xl lg:text-[2rem] mb-[0.56rem] md:mb-4">
           Rules and
           <span className="text-[#D434FE] block">Guidelines</span>

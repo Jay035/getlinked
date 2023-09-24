@@ -7,7 +7,12 @@ export default function Navbar() {
   return (
     <nav className="mb-12 text-white font-inter flex justify-between items-center border-b border-white/[18%] tracking-tight w-full gap-x-12 py-6 md:py-7 px-[9.5vw]">
       {/* <section className="text-white"> */}
-      <Link to="/" className="font-bold font-clashDisplay">
+      <Link
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        to="/"
+        className="font-bold font-clashDisplay"
+      >
         get<span className="text-[#D434FE]">linked</span>
       </Link>
       {/* </section> */}
@@ -18,11 +23,38 @@ export default function Navbar() {
             : `-left-full opacity-0 lg:opacity-100 lg:left-0 transition-all duration-100 delay-75`
         } font-Inter font-medium absolute top-0 bg-[#150E28] backdrop-blur-[30px] lg:bg-transparent lg:relative h-screen lg:h-fit w-full lg:w-fit ease-in-out flex flex-col items-start justify-center lg:flex-row lg:gap-12 lg:justify-between lg:items-center text-base md:text-lg`}
       >
-        <li className="hover:text-[#D434FE] cursor-pointer">Timeline</li>
-        <li className="hover:text-[#D434FE] cursor-pointer">Overview</li>
-        <li className="hover:text-[#D434FE] cursor-pointer">FAQs</li>
-        <li className="hover:text-[#D434FE] cursor-pointer">Contact</li>
         <li
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="hover:text-[#D434FE] cursor-pointer"
+        >
+          Timeline
+        </li>
+        <li
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          data-aos-delay="100"
+          className="hover:text-[#D434FE] cursor-pointer"
+        >
+          Overview
+        </li>
+        <li
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="hover:text-[#D434FE] cursor-pointer"
+        >
+          FAQs
+        </li>
+        <li
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="hover:text-[#D434FE] cursor-pointer"
+        >
+          Contact
+        </li>
+        <li
+          data-aos="fade-right"
+          data-aos-duration="3000"
           className="mt-[1.8rem] lg:mt-0 text-center cursor-pointer font-Montserrat font-normal bg-gradient-to-l hover:bg-gradient-to-r from-[#903AFF] via-[#D434FE] to-[#FF26B9] w-[10.8rem] h-[3.3rem] flex justify-center items-center"
           //   onClick={(e) => {
           //     e.preventDefault();

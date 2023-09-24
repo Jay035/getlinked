@@ -79,7 +79,7 @@ export function HeroSection() {
         </div> */}
       </div>
       {/* hero image */}
-      <div className="mt-[0.74rem] lg:mt-0 relative">
+      <div  className="mt-[0.74rem] lg:mt-0 relative">
         <img className="md:hidden" src={heroImg} alt="hackathon guy" />
         <img
           className="hidden w-full md:block"
