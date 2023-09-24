@@ -6,8 +6,10 @@ import ellipse from "../../assets/Ellipse 2.svg";
 
 export function JudgingCriteria() {
   return (
-    <section className="px-[2.81rem] lg:pl-[4.13rem] lg:pr-44 grid gap-[3.31rem] md:pt-20 md:grid-cols-2 pb-[3.67rem] bg-no-repeat bg-[-176px_3.28px] bg-hero bg-blend-hard-light border-y border-white/[18%]">
-      <div className="relative pt-[4.63rem] md:pt-0">
+    <section data-aos="fade-up"
+    data-aos-duration="3000" className="px-[2.81rem] lg:pl-[4.13rem] lg:pr-44 grid gap-[3.31rem] md:pt-20 md:grid-cols-2 pb-[3.67rem] bg-no-repeat bg-[-176px_3.28px] bg-hero bg-blend-hard-light border-y border-white/[18%]">
+      <div data-aos="fade-right"
+        data-aos-duration="3000" className="relative pt-[4.63rem] md:pt-0">
         <img
           className="px-[0.19rem] z-50 md:absolute"
           src={img}
@@ -24,12 +26,13 @@ export function JudgingCriteria() {
           alt="star"
         />
         <img
-          className="absolute left-4 -top-10 w-[8.3rem] "
+          className="absolute left-4 -top-10 w-[8.3rem] hidden lg:block"
           src={ellipse}
           alt="ellipse"
         />
       </div>
-      <div className="text-center md:text-left relative font-Montserrat">
+      <div data-aos="fade-left"
+        data-aos-duration="3000" className="text-center md:text-left relative font-Montserrat">
         <h2 className="font-clashDisplay text-xl mb-4">
           Judging Criteria
           <span className="text-[#D434FE] block">Key attributes</span>
